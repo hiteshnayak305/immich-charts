@@ -14,7 +14,7 @@ env:
   IMMICH_MACHINE_LEARNING_URL: '{{ printf "http://%s-machine-learning:3003" .Release.Name }}'
 
 image:
-  tag: v1.100.0
+  tag: v1.100.1
 
 immich:
   metrics:
@@ -99,7 +99,7 @@ machine-learning:
   persistence:
     cache:
       enabled: true
-      size: 15Gi
+      size: 10Gi
       # Optional: Set this to pvc to avoid downloading the ML models every start.
       type: emptyDir
       accessMode: ReadWriteMany
