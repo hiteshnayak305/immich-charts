@@ -99,7 +99,7 @@ machine-learning:
   persistence:
     cache:
       enabled: true
-      size: 10Gi
+      size: 1Gi
       # Optional: Set this to pvc to avoid downloading the ML models every start.
       type: emptyDir
       accessMode: ReadWriteMany
